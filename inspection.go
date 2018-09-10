@@ -29,13 +29,16 @@ func Cause(err error) error {
 	return errors.Cause(err)
 }
 
-// Unwrap returns the first occurrence of the underlying serializable Error type
-// using causer or create a new *Error type
-func Unwrap(err error) error {
+// Unwrap returns the first occurrence of the underlying *Error type
+// using causer or create a new *Error type containing the original error's message
+func Unwrap(err error) *Error {
+	if err == nil {
+		return nil
+	}
 	for err != nil {
-		_, ok := err.(kinder)
+		e, ok := err.(*Error)
 		if ok {
-			return err
+			return e
 		}
 		cause, ok := err.(causer)
 		if !ok {
