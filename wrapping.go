@@ -1,8 +1,8 @@
 package errors
 
 import (
-	"bytes"
 	"fmt"
+	"strings"
 
 	errors "github.com/pkg/errors"
 )
@@ -49,7 +49,7 @@ type withOp struct {
 }
 
 func (err *withOp) Error() string {
-	b := new(bytes.Buffer)
+	b := new(strings.Builder)
 	if err.op != "" {
 		pad(b, separator)
 		b.WriteString(string(err.op))

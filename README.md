@@ -4,6 +4,10 @@
 
 An errors package built on top of existing battle tested packages with structured JSON serialization support.
 
+## Requirements
+
+Go v1.11+ since `strings.Builder` API is used for generating the output for `Error()` method.
+
 ## Features
 
 * A very primitive support for monads

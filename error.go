@@ -1,11 +1,11 @@
 package errors
 
 import (
-	"bytes"
 	"fmt"
 	"log"
 	"runtime"
 	"strconv"
+	"strings"
 )
 
 const separator = ": "
@@ -53,7 +53,7 @@ func (e *Error) isZero() bool {
 }
 
 func (e *Error) Error() string {
-	b := new(bytes.Buffer)
+	b := new(strings.Builder)
 	if e.msg != "" {
 		pad(b, separator)
 		b.WriteString(string(e.msg))
@@ -163,7 +163,7 @@ func Errorf(format string, args ...interface{}) error {
 }
 
 // pad appends str to the buffer if the buffer already has some data.
-func pad(b *bytes.Buffer, str string) {
+func pad(b *strings.Builder, str string) {
 	if b.Len() == 0 {
 		return
 	}
