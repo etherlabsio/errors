@@ -6,7 +6,7 @@ An errors package built on top of existing battle tested packages with structure
 
 ## Requirements
 
-Go v1.11+ since `strings.Builder` API is used for generating the output for `Error()` method.
+Go v1.10+ since `strings.Builder` API is used for generating the output for `Error()` method.
 
 ## Features
 
