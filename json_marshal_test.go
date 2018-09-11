@@ -39,10 +39,9 @@ func TestWrappedMarshalJSON(t *testing.T) {
 	op := Op("TestWrappedMarshalJSON")
 	e2 := WithOp(e1, op)
 
-	err := Unwrap(e2)
+	input := Unwrap(e2)
 
-	input := err.(*Error)
-	output, ok := testJSONRoundTrip(err).(*Error)
+	output, ok := testJSONRoundTrip(input).(*Error)
 	if !ok {
 		t.Errorf("expected pointer err, but failed")
 	}
