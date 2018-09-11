@@ -1,7 +1,7 @@
 language: go
 go_import_path: github.com/etherlabsio/errors
 go:
-  - 1.11.0
+  - 1.10.0
   - tip
 
 script:
