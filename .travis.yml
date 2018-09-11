@@ -1,8 +1,9 @@
 language: go
 go_import_path: github.com/etherlabsio/errors
 go:
-  - 1.11.0
-  - tip
+  - "1.10"
+  - "1.11"
+  - "tip"
 
 script:
   - go test -race -v ./... -coverprofile=coverage.txt -covermode=atomic
