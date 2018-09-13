@@ -47,8 +47,9 @@ func Unwrap(err error) *Error {
 		err = cause.Cause()
 	}
 	return &Error{
-		msg:  "Internal error or inconsistency",
-		kind: Internal,
+		msg:   "Internal error or inconsistency",
+		kind:  Internal,
+		cause: err,
 	}
 }
 
