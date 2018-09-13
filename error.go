@@ -31,12 +31,13 @@ func (k Kind) String() string {
 // any items since that will change their values.
 // New items must be added only to the end.
 const (
-	Internal     Kind = iota // Internal error or inconsistency.
-	Invalid                  // Invalid operation for this type of item.
-	Permission               // Permission denied.
-	IO                       // External I/O error such as network failure.
-	AlreadyExist             // Item already exists.
-	NotExist                 // Item does not exist.
+	Internal       Kind = iota // Internal error or inconsistency.
+	Invalid                    // Invalid operation for this type of item.
+	Permission                 // Permission denied.
+	IO                         // External I/O error such as network failure.
+	AlreadyExist               // Item already exists.
+	NotExist                   // Item does not exist.
+	NotImplemented             // Method not implemented
 )
 
 // Error is the type that implements the error interface.
