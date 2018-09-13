@@ -78,3 +78,9 @@ func KindOf(err error) Kind {
 	}
 	return Internal
 }
+
+// IsKind returns a boolean signifying if the error
+// matches the Kind provided in the input
+func IsKind(err error, k Kind) bool {
+	return KindOf(err) == k
+}
