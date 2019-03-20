@@ -20,3 +20,10 @@ Go v1.10+ since `strings.Builder` API is used for generating the output for `Err
 
 * [Dave Cheney's error package](https://github.com/pkg/errors).
 * [Upspin Error package](https://github.com/upspin/upspin/blob/master/errors)
+
+
+## License
+
+Unless otherwise noted, the errors source files are distributed under the Apache Version 2.0 license found in the LICENSE file.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors?ref=badge_large)
