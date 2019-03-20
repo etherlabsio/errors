@@ -1,7 +1,6 @@
 # errors 
 
 [![Travis-CI](https://travis-ci.org/etherlabsio/errors.svg)](https://travis-ci.org/etherlabsio/errors) [![Go Report Card](https://goreportcard.com/badge/github.com/etherlabsio/errors)](https://goreportcard.com/report/github.com/etherlabsio/errors) [![GoDoc](https://godoc.org/github.com/etherlabsio/errors?status.svg)](https://godoc.org/github.com/etherlabsio/errors) [![codecov](https://codecov.io/gh/etherlabsio/errors/branch/master/graph/badge.svg)](https://codecov.io/gh/etherlabsio/errors)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors?ref=badge_shield)
 
 An errors package built on top of existing battle tested packages with structured JSON serialization support.
 
@@ -24,4 +23,7 @@ Go v1.10+ since `strings.Builder` API is used for generating the output for `Err
 
 
 ## License
+
+Unless otherwise noted, the errors source files are distributed under the Apache Version 2.0 license found in the LICENSE file.
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fetherlabsio%2Ferrors?ref=badge_large)
